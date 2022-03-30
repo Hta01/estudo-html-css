@@ -1,0 +1,69 @@
+/*
+arquirvo para formatação do site da cafeteria
+*/
+
+/*
+aplicar a formatação a todos os os elementos. Usaremos o
+asteristico(*)
+*/
+* {
+  /* zerar as margens externas dos elementos */
+  margin: 0;
+  /*  zerar as margens internas dos elementos */
+  padding: 0;
+  /*  ajuste das caixas(box) dos elementos */
+  box-sizing: border-box;
+}
+header {
+  height: 300px; /*altura da caixa*/
+  background-image: url("../img/cafeteria2.jpg");
+  /* ajustar a largura em 100% */
+  background-size: 100%;
+  /* ajustar a posição em x e y da img de fundo */
+  background-position: 0 -400px;
+  /* animação no fundo */
+  transition: ease 1s;
+  padding-top: 100px;
+}
+h1 {
+  text-align: center;
+  font-family: "Verdana";
+  color: rgb(255, 255, 255);
+  /* aplicar uma sombra no texto */
+  text-shadow: 10px 10px 5px rgba(190, 95, 95, 0.925);
+}
+
+nav {
+  background-color: chocolate;
+  text-align: center;
+}
+nav ul li {
+  /* dispor itens da lista (li) em linha  */
+  display: inline-block;
+  /* aumentar adistancia entre os elementos */
+  padding: 20px;
+  transition: ease 1s;
+}
+/* ao passar o mouser sobre o link o link deve mudar de cor */
+nav ul li:hover {
+  background-color: peru;
+}
+
+nav ul li a {
+  font-family: "fantasy";
+  font-size: 15pt;
+  color: saddlebrown;
+  /* retirar o underline do link */
+  text-decoration: none;
+}
+
+footer {
+  height: 300px;
+  background-color: sienna;
+  color: antiquewhite;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 40px;
+  /* dispor de forma flexivel e em linha  */
+  display: flex;
+  flex-direction: row;
+}
