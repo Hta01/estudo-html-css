@@ -22,13 +22,13 @@ header {
   /* ajustar a posição em x e y da img de fundo */
   background-position: 0 -400px;
   /* animação no fundo */
-  transition: ease 1s;
+  transition: ease 0.5s;
   padding-top: 100px;
 }
 h1 {
   text-align: center;
   font-family: "Verdana";
-  color: rgb(255, 255, 255);
+  color: black(255, 255, 255);
   /* aplicar uma sombra no texto */
   text-shadow: 10px 10px 5px rgba(190, 95, 95, 0.925);
 }
@@ -177,4 +177,45 @@ h3 {
   font-size: 15pt;
   color: sienna;
   font-weight: bold;
+}
+/* -----formatação css para pag contato ------*/
+main form {
+  width: 40%;
+  padding: 10px;
+  background-color: wheat;
+  margin-right: auto;
+  margin-left: auto;
+}
+main form input[type="text"],
+main form input[type="email"],
+main form input[type="tel"],
+main form select,
+main form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 0px;
+  border-bottom: 1px solid silver;
+  border-radius: 5px;
+  display: block;
+  font-weight: bold;
+  color: black;
+}
+main form input[type="tel"],
+main form select {
+  width: 30%;
+}
+main form textarea {
+  height: 150px;
+  border: 1px solid silver;
+  margin-bottom: 10px;
+}
+main form input[type="submit"] {
+  padding: 10px;
+  border: 0px;
+  background-color: sienna;
+  font-weight: bolder;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 45%;
 }
