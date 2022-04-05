@@ -25,6 +25,12 @@ header {
   transition: ease 0.5s;
   padding-top: 100px;
 }
+header a,
+#fechar {
+  opacity: 0;
+  transition: ease 0, 5s;
+}
+
 h1 {
   text-align: center;
   font-family: "Verdana";
@@ -36,6 +42,7 @@ h1 {
 nav {
   background-color: chocolate;
   text-align: center;
+  transition: ease 0.5s;
 }
 nav ul li {
   /* dispor itens da lista (li) em linha  */
@@ -247,8 +254,32 @@ main form input[type="submit"] {
     transition: ease 0.5s;
     /* mudar o pnteiro do mouse para uma mão */
   }
-  body {
-    background-color: rgb(252, 0, 189);
+  header a {
+    opacity: 1;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+
+    color: brown;
+    padding: 1px;
+    text-decoration: none;
+    font-size: 15pt;
+  }
+  #fechar {
+    opacity: 1;
+    color: rgb(255, 251, 251);
+    font-size: 20pt;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    text-decoration: none;
+    transform: rotate(180deg);
+  }
+  iframe {
+    width: 90%;
+  }
+  main form {
+    width: 90%;
   }
 }
 @media (min-width: 576px) {
@@ -274,6 +305,6 @@ main form input[type="submit"] {
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   body {
-    background-color: rgb(118, 206, 17);
+    background-color: rgb(255, 255, 255);
   }
 }
